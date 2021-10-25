@@ -12,8 +12,10 @@ allprojects {
 	}
 ```
   
-**Step 2.** Add the dependency
+**Step 2.** Add the dependency in your app build.gradle file
 
 	dependencies {
-	        implementation 'com.github.Retail-Merchant-Services:RMS-SB-ANDROID-SDK:Tag'
-	}
+	        implementation('com.github.Retail-Merchant-Services:RMS-SB-ANDROID-SDK:1.0.2@aar') {
+                transitive = true
+              }
+         }
